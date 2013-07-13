@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
 var fs = require('fs');
 
 var data = fs.readFileSync('foo.txt', {encoding: 'utf8'});
-  response.send(data);
+  response.send(data.toString('utf8');
 
 });
 
